@@ -1,0 +1,232 @@
+@import url('utilities.css');
+@import url('style2.css');
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #f2f2f2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: transparent;
+}
+
+header nav {
+    padding: 1rem 0;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-left: 200px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+nav div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    border-bottom: 2px solid #599095;
+    padding-bottom: 6px;
+}
+
+header nav a:hover {
+    color: var(--primary);
+    transition: all .5s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bckimg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.photo img {
+    width: 17rem;
+    height: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left {
+    margin-left: 13rem;
+}
+
+.right {
+    color: var(--pure);
+    margin-right: 10rem;
+}
+
+.right h6 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.right p {
+    color: var(--ternary);
+}
+
+.photo {
+    margin-top: 5rem;
+}
+
+section.about .container {
+    margin-top: 5rem;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    padding: 1rem;
+    border: solid 1px var(--ternary);
+    border-radius: 4%;
+    backdrop-filter: blur(20px);
+}
+
+section.about .container h1 {
+    color: rgb(187, 187, 187);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+section.about .container h1 span {
+    color: var(--primary);
+}
+
+section.about p {
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgb(187, 187, 187);
+    font-size: 18px;
+}
+.container h3 {
+    color: rgb(187, 187, 187);
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.container ul.list {
+    margin-left: 2.5rem;
+    color: rgb(187, 187, 187);
+    font-size: 18px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.education-table {
+    color: rgb(187, 187, 187);
+    margin-left: 3rem;
+}
+
+.education-table td {
+    padding: 1rem;
+    font-size: 18px;
+    font-family: 'Roboto mono', sans-serif;
+}
+
+.techno-link {
+    color: rgb(187, 187, 187);
+    font-size: 19px;
+}
+
+.techno-link a {
+    text-decoration: none;
+    color: var(--primary);
+}
+.techno-link a:hover {
+    color: var(--ternary);
+}
+
+footer .container {
+    width: 100%;
+    margin-top: 5rem;
+    border-top: 2px solid #599095;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+footer h2 {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(187, 187, 187);
+    margin-top: 2rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(187, 187, 187);
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+footer h5 span {
+    color: var(--primary);
+}
+
+.contact-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+footer .contact-logo a {
+    background-color: var(--ternary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+
+}
+
+footer .contact-logo a img {
+    padding: 0.5rem
+}
+
+footer .contact-logo a:hover {
+    background-color:  var(--primary);
+    transition: all .3s ease;
+}
+
+#linkedin-icon {
+    width: 45px;
+    height: 45px;
+}
+#linkedin-link {
+    padding: 2px;
+}
+
+.copyright {
+    color: rgb(187, 187, 187);
+    font-size: 15px;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}

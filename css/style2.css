@@ -1,0 +1,330 @@
+@import url('style.css');
+
+section.projects .container {
+    margin-top: 3rem;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    padding: 1rem;
+    border: solid 1px var(--ternary);
+    border-radius: 4%;
+    backdrop-filter: blur(20px);
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+section.projects .project-heading {
+    text-align: center;
+    color: rgb(187, 187, 187);
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Roboto Mono', sans-serif;
+    margin-top: 5rem;
+}
+
+section.projects .project-heading span {
+    color: var(--primary);
+}
+
+section.projects .slider .slide img {
+    width: 35px;
+}
+
+section.projects .slider .slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+section.projects .slider .slide h3 {
+    color: rgb(187, 187, 187);
+}
+section.projects .slider .slide p {
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    font-size: 19px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+section.projects .slider .slide a {
+    background-color: var(--ternary);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+section.projects .slider .slide a img {
+    padding: 0.25rem;
+    margin-left: 1px;
+}
+section.projects .slider .slide a:hover {
+    background-color: var(--primary);
+}
+
+.slider-dots .dots{
+    list-style-type: none;
+    display: flex! important;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.slider-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider-dots .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
+
+.slide .more {
+    margin: 5rem 0;
+}
+
+.except a {
+    width: 60px! important;
+    height: 60px! important;
+    margin-bottom: 1rem! important;
+}
+.except a img {
+    width: 50px! important;
+    padding: 5px! important;
+    margin: 4px 4px! important;
+}
+
+.except a:hover {
+    background-color: var(--primary);
+    transition: all .3s ease;
+    
+}
+.site-main-wrapper {
+    position: relative;
+}
+.hamberger {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    z-index: 11;
+    position: fixed;
+    display: none;
+}
+.hamberger img {
+    width: 25px;
+}
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: #11233dd5;
+    width: 40%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+.mobile-nav a:hover {
+    color: var(--ternary);
+}
+.open {
+    transform: translateX(0);
+}
+.cut {
+    position: fixed;
+    top: 42px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.cut img {
+    width: 20px;
+}
+.mobile-nav ul {
+    list-style-type: none;
+}
+.mobile-nav ul li a {
+    color: rgba(162, 208, 223, 0.911);
+    text-decoration: none;
+    font-family: 'Roboto mono', sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 1269px) {
+    header #main-nav {
+        display: none;
+    }
+    .hamberger {
+        display: block;
+    }
+    .photo img {
+        width: 15rem;
+        height: 15rem;
+        margin-top: 5rem;
+    }
+    .photo {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .left {
+        margin-left: 0! important;
+        margin-bottom: 2rem;
+    }
+    .right {
+        margin-right: 0! important;
+        text-align: center;
+    }
+    
+    section.projects .slider .slide {
+        padding: 1rem 0rem;
+    }
+    
+    section.projects .slider .slide p {
+        font-size: 20px;
+    }
+    section.projects .container {
+        width: 80%;
+    }
+    section.projects .slider .url-shortener span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .photo {
+        margin-left: 0rem;
+    }
+    .photo img {
+        width: 11rem! important;
+        height: 11rem! important;
+        margin-top: 0rem;
+    }
+    right h6 {
+        font-size: 20px! important;
+    }
+    .right p {
+        font-size: 11px;
+    }
+    section.about .container h1 {
+        font-size: 26px! important;
+    }
+    section.about p {
+        font-size: 15px! important;
+    }
+    .education-table td {
+        padding: 5px! important;
+        font-size: 10px! important;
+    }
+    .education-table {
+        margin-left: 1rem! important;
+    }
+    .container ul.list {
+        font-size: 15px! important;
+    }
+    .techno-link {
+        font-size: 15px! important;
+    }
+    .mobile-nav {
+        padding-left: 1rem;
+    }
+    .mobile-nav ul li a {
+        font-size: 15px;
+    }
+    footer h2 {
+        font-size: 16px! important;
+    }
+    footer h5 {
+        font-size: 16px! important;
+        margin-bottom: 2rem! important;
+    }
+    footer .contact-logo a {
+        width: 35px! important;
+        height: 35px! important;
+    }
+    footer .contact-logo a img {
+        padding: 8px! important;
+        width: 35px! important;
+    }
+    .contact-logo {
+        margin-bottom: 2rem! important;
+    }
+    section.projects .project-heading {
+        font-size: 26px;
+    }
+    .container h3 {
+        font-size: 17px;
+    }
+    section.projects .slider .slide p {
+        font-size: 10px;
+    }
+    section.projects .slider .url-shortener span {
+        font-size: 7px;
+    }
+    section.projects .slider .slide a {
+        width: 32px;
+        height: 32px;
+    }
+    section.projects .slider .slide img {
+        width: 28px;
+    }
+    .except a img {
+        width: 35px! important;
+        padding: 6px! important;
+        margin: 2px 2px! important;
+    }
+    .except a {
+        width: 40px! important;
+        height: 40px! important;
+    }
+    .hamberger img {
+        width: 17px;
+    }
+    .cut img {
+        width: 13px;
+    }
+    .cut {
+        top: 38px! important;
+    }
+    
+    footer #linkedin-icon {
+        width: 35px! important;
+        height: 35px! important;
+    }
+    footer #linkedin-link {
+        padding: 0.5px;
+    }
+
+}
