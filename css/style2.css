@@ -238,6 +238,9 @@ section.projects .slider .slide a:hover {
     .right p {
         font-size: 11px;
     }
+    section.about .container {
+        width: 65%;
+    }
     section.about .container h1 {
         font-size: 26px! important;
     }
@@ -252,7 +255,7 @@ section.projects .slider .slide a:hover {
         margin-left: 1rem! important;
     }
     .container ul.list {
-        font-size: 15px! important;
+        font-size: 12px! important;
     }
     .techno-link {
         font-size: 15px! important;
